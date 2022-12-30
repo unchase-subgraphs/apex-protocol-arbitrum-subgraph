@@ -1,4 +1,4 @@
-specVersion: 0.0.4
+specVersion: 0.0.5
 description: ApeX is a decentralized and non-custodial derivatives protocol that facilitates the creation of perpetual swap markets for any token pair.
 repository: https://github.com/unchase-subgraphs/apex-protocol-arbitrum-subgraph
 schema:
@@ -12,7 +12,7 @@ dataSources:
       abi: Factory
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Pair
@@ -38,7 +38,7 @@ templates:
       abi: Pair
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       file: ./src/core.ts
       entities:
